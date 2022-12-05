@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "youtube-downloader"
+version = "0.1.0"
+description = "Programa que permite baixar vídeos/áudios a partir de links do YouTube."
+authors = ["Bruno Lemes <bruno29batista@gmail.com>"]
+readme = "README.md"
+packages = [{include = "youtube_downloader"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytube = "^12.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
