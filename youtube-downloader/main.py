@@ -7,9 +7,7 @@ from pytube import YouTube
 def download_audio(link: str):
     yt = YouTube(link)
     audio = yt.streams.get_audio_only()
-    path = audio.download( # type: ignore
-        output_path='/home/bruno/Downloads/'
-    ) 
+    path = audio.download(output_path='/home/bruno/Downloads/')
     convert_video_to_audio(path)
 
 
